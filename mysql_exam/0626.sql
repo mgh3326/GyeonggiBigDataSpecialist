@@ -1,8 +1,3 @@
-#2018-0625
-select * from sample.sample21;
-use sample;
-select * from sample21;
-select no, name from sample21;
 #2018-0626
 select * from sample.sample21;
 use sample;
@@ -134,3 +129,21 @@ update sample41 set a='a',b='2018-06-26'
 where a is null and b is null;
 
 # 이것도 딜리트랑 마찬가지로 안된다.
+
+select * from sample51;
+
+select sum(quantity),count(name)
+ from sample51
+ where name='A';
+ 
+select count(no), count(name), count(distinct name)
+from sample51;
+
+select name, avg(quantity),
+avg(case when quantity is null then 0 else quantity end) as avg0
+from sample51;
+
+select name, avg(quantity),
+avg(case when quantity is null then 0 else quantity end) as avg0
+from sample51
+group by name;
