@@ -7,7 +7,7 @@
     * 과정 시작
     * mysql 설치
     * workbench 설치
-![](images/SQL_첫걸음.JPG)
+![](images/SQL_첫걸음.jpg)
 * 2018/06/26
     * mysql 20 강까지
 * 2018/06/27
