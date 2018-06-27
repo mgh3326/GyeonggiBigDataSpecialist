@@ -1,5 +1,13 @@
-#2018-0625
-select * from sample.sample21;
+SELECT 
+    *
+FROM
+    sample.sample21;
 use sample;
-select * from sample21;
-select no, name from sample21;
+SELECT 
+    *
+FROM
+    sample21;
+SELECT 
+    no, name
+FROM
+    sample21;
