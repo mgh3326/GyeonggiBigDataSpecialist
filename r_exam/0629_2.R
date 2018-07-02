@@ -2,8 +2,8 @@
 
 -R책 추천
 http://r4pda.co.kr/
-  
-  -wikidocs.net : 무료책(이거보고 혼자 공부 좀 해라)
+
+-wikidocs.net : 무료책(이거보고 혼자 공부 좀 해라)
 
 내pc-속성-고급설정-환경변수에서 추가하기
 JAVA_HOME
@@ -18,7 +18,7 @@ rstudio - tools - global option - code - saving - utf-8
 
 대소문자 구분
 --------------------------------------------------------------------------------
-  Rstudio
+Rstudio
 
 KoNLP: 자바를 요청함
 
@@ -37,15 +37,15 @@ FALSE = F
 NA 결측치(상수, 스칼라)
 
 =, <-, ->  : 지역변수?연산자?
-  <<-, ->>, %>%
-  꺽새 방향으로 향한다
+<<-, ->>, %>%
+꺽새 방향으로 향한다
 
 rep(x, ...)
 rep.int(x, times)
 rep_len(x, length.out)
 
 ---------------------------------------------------------------------------------
-  install.packages('KoNLP', dependencies = T)
+install.packages('KoNLP', dependencies = T)
 KoNLP::extractNoun("아버지가 방에 들어가신다")
 
 library(KoNLP)
@@ -70,26 +70,25 @@ X2 = "abc"
 x3=1:5 # :는 범위
 x3
 print(x3) #x3 화면에 보여줘라
-x3[3] #3번째에 잇는값 호출 []는 인덱스
-x3[-3] #-를 붙이면 이걸 제외한다는 뜻
+x3[3]#3번째에 잇는값 호출 []는 인덱스
+x3[-3]#-를 붙이면 이걸 제외한다는 뜻
 (x4=c(1, 5, 9, 2, 6)) #내가 원하는것 마구잡이로, 단 한종류의 데이터타입을 넣어줘야함
 #전체를 괄호에 넣는건 print랑 같은뜻
 #[]는 인덱스
 x4[-c(2, 5)]
-
 #vector를 만드는 함수드
 rep(3, 5) #repeat 3을 5번 찍어라
 ?rep #? help
 ?sample
 rep(1:3, 5)
 rep(1:3, each=5, length.out=10) #each 각각, length.out 내가 원하는 길이만큼 제한
-rep(c(1,4,2), c(3,2,5)) #c는 셋트...?
+rep(c(1, 4, 2), c(3, 2, 5)) #c는 셋트...?
 
-seq(1,45,5) #sequence(시작, 끝, 간격) : 1부터 45까지 5간격
+seq(1, 45, 5) #sequence(시작, 끝, 간격) : 1부터 45까지 5간격
 
 #sample(범위, 추출수) 무작위 //replace 복원추출하면 원래보다 더 큰수를 추출가능(t=o, f=x)
 sample(x4, 10, replace = T)
-sample(x4, 10, relace=T, prob=c(1,5,1,7,1))  #prob =가중치 : x4의 1 5 9 2 6중에 5는 가중치5, 2는 가중치 7 준다.
+sample(x4, 10, relace=T, prob=c(1, 5, 1, 7, 1))  #prob =가중치 : x4의 1 5 9 2 6중에 5는 가중치5, 2는 가중치 7 준다.
 
 
 
@@ -110,9 +109,8 @@ paste('x', 1:length(x4), sep='') #연결해서 하나로
 names(x4)=paste('x', 1:length(x4), sep='')
 names(x4)
 x4['x3']
-
 iris[2:5, 2]
-iris[, 'Sepal.Length']   #, 모든행
+iris[, 'Sepal.Length']#, 모든행
 iris$Sepal.Length
 iris[2]
 
@@ -125,7 +123,7 @@ mean(iris[1:4])
 as.array() #인지 아닌지 확인하는 함수
 class(iris[2])
 
-x5<-iris[,1:4]
+x5<-iris[, 1:4]
 x5<-as.matrix(x5)
 mode(x5)
 class(x5)
@@ -133,8 +131,8 @@ mean(x5)
 
 ind1=sample(1:nrow(iris), nrow(iris)*0.7, replace = F)
 
-train=iris[ind1, ]
-test=iris[-ind1, ]
+train=iris[ind1,]
+test=iris[-ind1,]
 
 nrow(train)
 nrow(test)
@@ -152,10 +150,8 @@ x8
 
 dim(x8) #dimesion
 dim(x8)[1]
-
-x9=array(1:60, dim=c(4,5,3))#3차원데이터원(행,열,면)
-x9[ , , 1]
-
+x9=array(1:60, dim=c(4, 5, 3))#3차원데이터원(행,열,면)
+x9[, , 1]
 read
 write#내보낼때?
 load #데이터셋 읽어올때
@@ -172,8 +168,8 @@ dim(img1)
 1:5 +3
 
 img2=img1
-img2[,,1]=img2[,,1]*0.7 #색 농도낮추기
-img3=img2[100:300, 100:400, ] #자르기
+img2[, , 1]=img2[, , 1]*0.7 #색 농도낮추기
+img3=img2[100:300, 100:400,]#자르기
 
 writeJPEG(img3, 'img3.jpg')
 
@@ -197,12 +193,12 @@ rbind(y1, y2)#행 합치기, 위아래로, 열의 수 동일해야함(항을 더
 cbind(y1, y2)#열 합치기, 좌우로, 행의 수 동일해야함
 
 y3=list(a=1, b=1:3, c=y1, d=data1) #list 각기 다른 구조를 가질 수 있다
-y3[[3]][2,3] #list 값 가지고 오기 대괄호2번, 뒤에 원하는 행과 열
+y3[[3]][2, 3] #list 값 가지고 오기 대괄호2번, 뒤에 원하는 행과 열
 y3[[2]][2]
 y4=list(a=y3, b=y3)
 str(y4) #데이터구조, 변수개수, 변수명 등 미리보기
 y4[[1]][[3]]#list안에 list이므로 대괄호 2번 사용
-y4[[1]][[3]][2,3]
+y4[[1]][[3]][2, 3]
 y4$a$c #list안의 list, 위의 것과 같은 얘기, 이게 쓰기 더 편함
 
 
@@ -212,14 +208,12 @@ class(txt1) #데이터 객체 구성요소의 속성
 str(txt1)
 nchar(txt1)
 
-x5=c(7,6,3,5)
+x5=c(7, 6, 3, 5)
 x5>=6 #결과로 true, false
 
-x5[x5>=6] #결과로 값
+x5[x5>=6]#결과로 값
 
 txt2=txt1[nchar(txt1)>0]
-
-
 length(txt1)
 length(txt2)
 
