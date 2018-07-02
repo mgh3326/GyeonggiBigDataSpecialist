@@ -64,8 +64,8 @@ class(x5)
 mean(x5)
 
 ind1 = sample(1:nrow(iris), nrow(iris) * 0.7, replace = F)
-train = iris[ind1,]
-test = iris[-ind1,]
+train = iris[ind1, ]
+test = iris[-ind1, ]
 
 nrow(train)
 nrow(test)
@@ -93,7 +93,7 @@ dim(img1)
 1:5 + 3
 img2 = img1
 img2[, , 1] = img2[, , 1] * 0.7
-img3 = img2[100:300, 100:400,]
+img3 = img2[100:300, 100:400, ]
 
 writeJPEG(img3, 'img3.jpg')
 
@@ -137,16 +137,24 @@ x5 = c(7, 6, 3, 5)
 x5 >= 6
 
 x5[x5 >= 6]
-txt2 = txt1[nchar(txt1) > 0 ]
+txt2 = txt1[nchar(txt1) > 0]
+length(txt1)
+length(txt2)
 
-txt2
 library(KoNLP)
-extractNoun(txt2)
-# 왜 이게 안될까
 txt3 = extractNoun(txt2)
-txt4 = table(txt2)
-install.packages('wordcloud2')
+class(txt3)
+txt3
 
+txt4 = unlist(txt3)
+
+txt4 = table(unlist(txt3)) #단어들빈도
+txt4
+
+
+install.packages("wordcloud2")
 library(wordcloud2)
 txt5 = as.data.frame(txt4)
+
 wordcloud2(txt5)
+
