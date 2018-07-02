@@ -64,8 +64,8 @@ class(x5)
 mean(x5)
 
 ind1 = sample(1:nrow(iris), nrow(iris) * 0.7, replace = F)
-train = iris[ind1, ]
-test = iris[-ind1, ]
+train = iris[ind1,]
+test = iris[-ind1,]
 
 nrow(train)
 nrow(test)
@@ -93,7 +93,7 @@ dim(img1)
 1:5 + 3
 img2 = img1
 img2[, , 1] = img2[, , 1] * 0.7
-img3 = img2[100:300, 100:400, ]
+img3 = img2[100:300, 100:400,]
 
 writeJPEG(img3, 'img3.jpg')
 
@@ -157,4 +157,3 @@ library(wordcloud2)
 txt5 = as.data.frame(txt4)
 
 wordcloud2(txt5)
-

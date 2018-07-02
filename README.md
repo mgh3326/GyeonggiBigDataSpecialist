@@ -17,6 +17,7 @@
 * 2018/06/29
     * mysql 마무리
     * r, r studio 설치
+    * r wordclude2 실습
 * 2018/07/02
 ![](images/R인_액션.jpg)        
 
