@@ -1,4 +1,4 @@
-# 멀티캠퍼스 경기 BIGDATA 전문인력 분석심화(경희대)
+**# 멀티캠퍼스 경기 BIGDATA 전문인력 분석심화(경희대)
 
 > 기간 2018.06.25 ~ 2018.08.31
 
@@ -19,6 +19,12 @@
     * r, r studio 설치
     * r wordclude2 실습
 * 2018/07/02
+    * R에서 mysql 연동
+    * 기술 통계학
+    * 히스토그램
+    * 누적 막대 그래프
+    * 집단 막대 그래프
+    * 파이 차트
 ![](images/R인_액션.jpg)        
 
 <hr/>
@@ -37,3 +43,4 @@
 사용법
 
 [사용법 바로가기](https://github.com/mgh3326/auto_git_update/blob/master/README.md)
+**
