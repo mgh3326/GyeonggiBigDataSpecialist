@@ -328,6 +328,50 @@ fuel <-
 fuel
 mpg
 mpg_new <- left_join(mpg, fuel, by = "fl")
-mpg_new%>%select(model,fl,price_fl)%>%head(5)
+mpg_new %>% select(model, fl, price_fl) %>% head(5)
 midwest <- as.data.frame(ggplot2::midwest)
 str(midwest)
+midwest %>% select(poptotal, popadults) %>% head
+midwest %>% head
+(midwest$poptotal - midwest$popadults) / midwest$poptotal
+midwest1 <- midwest
+
+midwest1 <-
+  midwest1 %>% mutate(under_aged_population = (midwest$poptotal - midwest$popadults) /
+                        midwest$poptotal * 100)
+midwest1 %>% arrange(desc(under_aged_population)) %>% head(5) %>% select(county, under_aged_population)
+midwest1$classification <-
+  ifelse(
+    midwest1$under_aged_population >= 40,
+    "large",
+    ifelse(midwest1$under_aged_population >= 30,
+           "middle", "small")
+  )
+midwest1   %>%
+  group_by(classification) %>%
+  summarise(count = n()) %>% arrange(desc(count))
+table(midwest1$classification)
+midwest1$popasian
+
+midwest1 <-
+  midwest1 %>% mutate(popasian_percent = midwest$popasian /
+                        midwest$poptotal * 100)
+midwest1$popasian_percent
+
+midwest1 %>% select(popasian, poptotal, popasian_percent)
+str(midwest1)
+midwest1 %>% arrange(popasian_percent) %>% select(state, county, popasian_percent) %>%
+  head(10)
+
+
+df <- data.frame(sex = c("M", "F", NA, "M", "F"),
+                 score = c(5, 4, 3, 4, NA))
+df
+
+is.na(df)
+table(is.na(df))
+table(is.na(df$sex))
+table(is.na(df$score))
+library(dplyr)
+df %>% filter(is.na(score))
+df %>% filter(!is.na(score))
