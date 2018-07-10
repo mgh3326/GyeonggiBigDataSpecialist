@@ -98,5 +98,49 @@ squre <- function(upper, lower, height)
 {
   return((upper + lower) * height / 2)
 }
-squre(1,1,1)
-squre(1,1,3)
+squre(1, 1, 1)
+squre(1, 1, 3)
+
+ls()
+library(MASS)
+options(digit = 3)
+set.seed(1234)
+mean <- c(230.7, 146.7, 3.6)
+sigma <-
+  matrix(
+    c(15360.8, 6721.2,-47.1, 6721.2, 4700.9,-16.5,-47.1,-16.5, 0.3),
+    nrow = 3,
+    ncol = 3
+  )
+mydata <- mvrnorm(500, mean, sigma)
+mydata <- as.data.frame(mydata)
+names(mydata) <- c("y", "x1", "x2")
+head(mydata)
+
+head(iris)
+
+
+lapply(iris[, 1:4], mean) # 데이터 프레임 iris에 함수 적용
+apply(iris[, 1:4], 2, sum)
+d <-
+  as.data.frame(matrix(unlist(lapply(iris[, 1:4], mean)), ncol = 4, byrow = TRUE))
+
+names(d) <- names(iris[, 1:4])
+d
+do.call(cbind, lapply(iris[, 1:4], mean))
+data.frame(do.call(cbind, lapply(iris[, 1:4], mean)))
+aa <- list(data.frame(name = "foo", value = 1),
+           data.frame(name = "bar", value = 2))
+# 리스트에 함수 rbind를 적용하고 데이터 프레임을 반환
+do.call(rbind, aa) # 속도가 느린 단점이 있음
+x <- sapply(iris[, 1:4], mean)
+as.data.frame(x)
+x
+tapply(1:10, rep(1, 10), sum)
+tapply(1:10, rep(c(1, 2), 5), sum)
+m <- matrix(1:8, ncol = 2,
+            dimnames = list(c("Spring", "Summer", "Fall", "Winter"), c("M", "F")))
+tapply(m, list(c(1, 1, 2, 2, 1, 1, 2, 2), c(1, 1, 1, 1, 2, 2, 2, 2)), sum)
+
+help(rnorm)
+mapply(rnorm, c(1, 2, 3), c(0, 10, 100), c(1, 1, 1))
