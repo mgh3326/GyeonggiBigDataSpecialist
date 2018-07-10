@@ -87,11 +87,11 @@ str(total_article)
 
 ## 정규표현식은 패턴을 찾아주는 것
 ## 목표: 치환
-set.seed(5678)
+set.seed(3333)
 test <- total_article[sample(200, 3)]
 clz_data <- gsub(pattern = "^.+\\{\\}",
                  replacement = " " ,
-                 x = total_article)
+                 x = test)
 clz_data <- gsub("[0-9a-zA-Z]",
                  " " ,
                  clz_data)
@@ -122,75 +122,8 @@ library(tm)
 getSources()
 
 cps <- VCorpus(VectorSource(clz_data))
-dtm <- DocumentTermMatrix(cps,
-                          control = list(
-                            tokenzie = ko_word,
-                            stopwords = c("바로가기", "뉴스", "기자"),
-                            wordLengths = c(2, 7),
-                            weights = weightBin
-                          ))
-dtm.mat <- as.matrix(dtm)
-word.freq <- colSums(dtm.mat)
-df_word <- data.frame(word = names(word.freq), freq = word.freq)
-
-install.packages("wordcloud2")
-install.packages("htmlwidgets")
-library(wordcloud2)
-library(htmlwidgets)
-
-wc2 <- wordcloud2(data = df_word, color = "random-dark")
-saveWidget(wc2, "tmp.html", selfcontained = F)
-word.order <- order(word.freq, decreasing = T)[1:50]
-dtm2 <- DocumentTermMatrix(cps,
-                           control = list(
-                             tokenzie = ko_word,
-                             stopwords = c("바로가기", "뉴스", "기자"),
-                             wordLengths = c(2, 7),
-                             weighting = weightBin
-                           ))
-dtm.mat2 <- as.matrix(dtm2)
-word.freq2 <- colSums(dtm.mat2)
-word.order2 <- order(word.freq2, decreasing = T)[1:50]
-
-word_50th <- dtm.mat2[, word.order2]
-dim(word_50th)
-occur <- t(word_50th) %*% word_50th
-dim(occur)
-View(occur)
-
-install.packages("qgraph")
-library(qgraph)
-png('result.png', width = 1500, height = 1500)
-qgraph(
-  occur,
-  layout = "spring",
-  color = "skyblue",
-  vsize = sqrt(diag(occur)),
-  labels = colnames(occur),
-  diag = F
-)
-dev.off()
-
-
-dtm2 <- DocumentTermMatrix(
-  cps,
-  control = list(
-    tokenzie = ko_word,
-    stopwords = c("바로가기", "뉴스", "기자"),
-    wordLengths = c(2, 7),
-    weighting = weightBin,
-    dictionary = c("무단전재", "재배포")
-  )
-)
-dtm.mat2 <- as.matrix(dtm2)
-
-fb_ouath = "EAAHnGEpl5kYBAGMPclYHlxiJASQES6ovcf7EZB0KF8Pfp2bWHG5DNVQYX6yiKIuBvomn8r3ZAwIDJdfZAyZBoezZB9M2CIx3Put28EMMqdvaSyemAGBbhY0kyehz7dNXU62F1015WFqRzKOdTGH507GnCVcQgfOBrLNFrbzm19ZClL3pODE7C7WYcVLvqntEWhwf4MR2pAewZDZD"
-pac = c("Rfacebook", "base64enc", "ROAuth")
-install.packages(pac)
-
-library(Rfacebook)
-library(base64enc)
-library(ROAuth)
-
-getUsers("FacebookKorea", fb_ouath, private_info = T)
-getPage("FacebookKorea", token = fb_ouath)
+dtm <- DocumentTermMatrix(cps, control = list(
+  tokenzie = ko_word,
+  stopwords = c("바로가기", "뉴스", "기자"),
+  wordLengths = c(2, 7)
+))
