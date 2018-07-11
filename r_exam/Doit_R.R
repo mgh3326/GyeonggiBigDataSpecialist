@@ -372,6 +372,15 @@ is.na(df)
 table(is.na(df))
 table(is.na(df$sex))
 table(is.na(df$score))
+remove.packages("dplyr")
+install.packages("dplyr")
 library(dplyr)
+stats::filter
+filter(1:10, rep(1, 3))
+dplyr::filter
+? filter
 df %>% filter(is.na(score))
 df %>% filter(!is.na(score))
+
+df_nomiss <- df %>% filter(!is.na(score))
+mean(df_nomiss)
