@@ -383,4 +383,60 @@ df %>% filter(is.na(score))
 df %>% filter(!is.na(score))
 
 df_nomiss <- df %>% filter(!is.na(score))
-mean(df_nomiss)
+mean(df_nomiss$score)
+sum(df_nomiss$score)
+df_nomiss <- df %>% filter(!is.na(score) & !is.na(sex))
+df_nomiss
+df_nomiss2 <- na.omit(df)
+df_nomiss2
+mean(df$score, na.rm = T)
+sum(df$score, na.rm = T)
+
+exam <- read.csv("./data/csv_exam.csv")
+
+exam[c(3, 8, 15), "math"] <- NA
+exam
+exam %>% summarise(mean_math = mean(math))
+
+exam %>% summarise(mean_math = mean(math, na.rm = T))
+exam %>% summarise(
+  mean_math = mean(math, na.rm = T),
+  sum_math = sum(math, na.rm = T),
+  median_math = median(math, na.rm = T)
+)
+
+mean(exam$math, na.rm = T)
+
+exam$math <- ifelse(is.na(exam$math), 55, exam$math)
+table(is.na(exam$math))
+
+exam
+mean(exam$math)
+
+mpg <- as.data.frame(ggplot2::mpg)
+mpg[c(65, 124, 131, 153, 212), "hwy"] <- NA
+table(mpg)
+table(is.na(mpg))
+table(mpg$drv)
+table(is.na(mpg$drv))
+table(mpg$hwy)
+table(is.na(mpg$hwy))
+
+mpg %>% filter(!is.na(hwy)) %>% group_by(drv) %>% summarise(mean_hwy =
+                                                              mean(hwy))
+outlier <-
+  data.frame(sex = c(1, 2, 1, 3, 2, 1), score = c(5, 4, 3, 4, 2, 6))
+outlier
+
+table(outlier$sex)
+table(outlier$score)
+
+outlier$sex <- ifelse(outlier$sex == 3, NA, outlier$sex)
+outlier
+outlier$score <- ifelse(outlier$score > 5, NA, outlier$score)
+outlier
+
+outlier %>% filter(!is.na(sex) &
+                     !is.na(score)) %>% group_by(sex) %>% summarise(mean_score = mean(score))
+boxplot(mpg$hwy)
+boxplot(mpg$hwy)$stats

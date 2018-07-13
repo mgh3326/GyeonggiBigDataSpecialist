@@ -205,6 +205,7 @@ pie(freq_Income)
 cross_Income_Credit <- xtabs( ~ Income + Credit, data = credit_df)
 
 cross_Income_Credit
+
 barplot(cross_Income_Credit,
         col = c("red", "blue", "green"),
         ylim = c(0, 60))
