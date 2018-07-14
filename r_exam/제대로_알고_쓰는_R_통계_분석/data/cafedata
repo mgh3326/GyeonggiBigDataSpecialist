@@ -1,0 +1,81 @@
+NAME: cafedata.dat
+TYPE: Time series data
+SIZE: 48 observations, 22 variables
+ARTICLE TITLE: Café Data
+
+DESCRIPTIVE ABSTRACT:
+This dataset contains data from a café, called Executive Express, run by undergraduate business students at a Midwestern public university. It was collected over a ten-week period from January to April 2010. Variables include a number of types of items sold and wasted, along with total sales values. These data can be used to illustrate basic concepts of time series and forecasting, including trend, seasonality, and decomposition. The dataset may be of special relevance to instructors of business statistics students, who can utilize it to involve students in making data-driven business decisions. This data set is to accompany the article entitled Café Data.
+
+SOURCES: 
+The sales and item data were collected by the café’s student volunteer workers each day from January 19 through April 1, 2010. The daily temperature data was obtained from an internet-based historical weather site called Weather Underground, http://www.wunderground.com/history/.
+
+VARIABLE DESCRIPTIONS:
+A header line containing variable names is included in the data file. Variables are tab delimited. Each day is one line in the data file. Missing observations are coded as na. The variables are as follows: 
+(1) t, time/day;
+(2) Date; 
+(3) Day Code: 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday; 
+(4) Day of Week: Monday through Friday, café does not open on weekends;
+(5) Bread Sand Sold: Number of bread sandwiches sold per day; 
+(6) Bread Sand Waste: Number of bread sandwiches expired and thrown away each day; 
+(7) Wraps Sold: Number of wrap sandwiches sold per day; 
+(8) Wraps Waste: Number of wrap sandwiches expired and thrown away each day; 
+(9) Muffins Sold: Number of assorted muffins sold each day;
+(10) Muffins Waste: Number of assorted muffins expired and thrown away each day;
+(11) Cookies Sold: Number of assorted cookies sold each day;
+(12) Cookies Waste: Number of assorted cookies expired and thrown away each day;
+(13) Fruit Cup Sold: Number of fruit cups sold each day;
+(14) Fruit Cup Waste: Number of fruit cups expired and thrown away each day;
+(15) Chips: Number of bags of chips sold each day;
+(16) Juices: Number of assorted bottled juices sold each day;
+(17) Sodas: Number of cups of soda sold each day;
+(18) Coffees: Number of cups of coffee sold each day;
+(19) Total Soda and Coffee: Total number of cups of coffee and soda sold each day;
+(20) Sales: Total dollar sales indicated on sales register receipt each day;
+(21) Max Daily Temperature (F): Maximum daily temperature recorded for the city each day;
+(22) Total Items Wasted: Total number of items (including bread and wrap sandwiches, muffins, cookies, and fruit cups) expired and thrown away each day.
+
+SPECIAL NOTES:
+Day 34 (03/05/10) has missing data for all sale items because the café was closed. Analyses done with statistical software should not be affected by this missing data point; however, if time series analysis is to be done with Excel, the missing data need to be addressed prior to analysis.
+
+STORY BEHIND THE DATA:
+
+After a campus food vendor left the College of Business due to decreased demand, undergraduate business students opened a café serving sandwiches, snacks and drinks. The café allowed students to gain real experience in running a business. A startup loan obtained from the university’s president and staffing by volunteers made the concept financially feasible. A student team designed the menu, placed orders and trained staff. Data for this dataset were obtained from daily operations of the café during the Spring semester of 2010.
+
+The dollar value of sales is taken from each day’s cash register tape. At the beginning of each day, a student volunteer worker takes a physical count on the items available for sale and adds to that number of items purchased and received from the food service vendor. At the end of the day, another count is taken and the total items sold, less any items that have expired, is calculated. Expired items are deducted as waste. Drink sales are calculated by counting the cups available each morning, less the cups available at the end of the day. Coffee and sodas are sold in different style cups so there is no confusion between the two. The counts were essential in providing control over inventory, which was especially important because the campus food service vendor reported their biggest source of loss from operations was inventory shrinkage due to theft by customers and employees.
+
+Because of the low profit margins and higher costs of sandwiches and cookies, the café personnel were careful to control ordering of those items so that there would be little waste, but anticipating demand was difficult to do.  Demand moved up and down in part due to the number of classes going on at any time.  Fridays were the lowest sales and most food products could not be kept over the weekend so careful ordering on Thursday was especially important to not over stock any item.  
+
+Daily temperature is included in the dataset as weather was thought to affect sales. The theory formed by staff was that if it was cold, people were reluctant to leave the building and therefore ate at the café, but if it was warm they went out more and café sales dropped.
+
+PEDAGOGICAL NOTES:
+
+Issues with Using Descriptive Statistics for Time Series Data: 
+Two variables, Sodas and Coffees sold per day, are useful in illustrating that, for time series data, descriptive statistics can be misleading and can hide a great deal of information if time is not considered. In this dataset, if time is not considered, the number of sodas and coffees sold are similar in terms of mean and standard deviation. However, when day of the week (seasonality) is considered, the variability between the two items is actually quite different, with sodas varying substantially between days of the week and coffees being fairly consistent throughout the week. Also, a simple graph of each time series shows that while the number of sodas appears to increase over the course of the semester, coffee sales decrease. 
+
+Trend Analysis, Correlations & Data-Driven Business Decisions: 
+Several of the variables in the dataset show a trend over time, including soda, coffee, and several of the waste variables, including Bread Sandwich Waste, Wrap Waste, and Total Items Wasted. Several other variables do not include significant trend, including Bread sandwiches, Wraps, Muffins, Cookies, Fruit Cups, Chips, Juices, and Sales. We like to use the coffee and soda variables to illustrate two things: (1) that without taking into account seasonality, the trend component will not account for a large amount of variation in the time series; and (2) that it is sometimes interesting to think about the factors that influence trends, and therefore, business aspects of the data. For example, data collection occurred over the course of a spring semester, from January to April, in which time the temperatures varied from 20 to 80 degrees Fahrenheit. We found that coffee sales decreased as temperatures increased, but soda sales increased. Interestingly, the total number of coffees and sodas sold and overall cafe sales did not vary with time. Correlations show that coffee sales decrease as the weather becomes warmer, but soda sales increase. From a business perspective, we might surmise that we are keeping a fairly consistent customer base, but that these customers are switching from hot to cold drinks as the weather becomes warmer. Another business application can be highlighted with the downward trends in the waste variables, which are likely explained by the student managers becoming more adept at forecasting demand and ordering over the course of the semester.
+
+Using Regression Analysis to Predict Sales:
+Another application for the café data is predicting sales using multiple regression with dummy variables to represent seasonality within a week. The temperature variable can also be included to observe how much extra variation is explained. Using only time and the four day of the week dummy variables will explain about 61% of variation in sales. This model is fairly good. Adding the temperature variable does not appear to add much value to the model; in fact, it is not significant and increases R-squared by only 2%. This can lead to a valuable discussion about the desirability of adding this variable. For the business implications, it is important to note that the temperature variable, while significant in explaining coffees and sodas sold, does not appear to have a significant impact on overall sales.
+
+Time Series Decomposition & Seasonally Adjusted Forecasts: 
+Once seasonality and trend have been identified, students can focus on the business applications by using time series decomposition to forecast sales or individual item sales. Forecasts of sales of individual items are important, especially for perishable items, to minimize waste and maximize profits. Sales forecasts might be used to try to gauge how long it will be before the café is able to pay back its startup loan. Decomposition shows a slight downward trend in sales and quite a large amount of seasonality present within a week, with Fridays being substantially lower and Tuesdays and Thursdays being substantially higher. The forecasts generated by this model are very close to those generated by the multiple regression model with day-of-the-week dummy variables. 
+
+
+SUBMITTED BY:
+
+Concetta A. DePaolo
+Scott College of Business
+Indiana State University
+Terre Haute, IN 47809
+cdepaolo@indstate.edu 
+Phone: 812-237-2283
+Fax: 812-237-8133
+
+David F. Robinson
+Scott College of Business
+Indiana State University
+Terre Haute, IN 47809
+drobinson15@indstate.edu
+Phone: 812-237-8829
+Fax: 812-237-8133
