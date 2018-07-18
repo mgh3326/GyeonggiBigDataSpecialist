@@ -241,6 +241,7 @@ m1 <- lm(y_c ~ x_c)
 summary(m1)
 plot(m1)
 coef(m)
+coef(m1)
 fitted(m)[1:4]
 residuals(m)[1:4]
 confint(m)
