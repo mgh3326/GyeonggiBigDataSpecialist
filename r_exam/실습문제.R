@@ -1,42 +1,53 @@
-#½Ç½À¹®Á¦2-2
+#ì‹¤ìŠµë¬¸ì œ2-2
 
-#(1) cars µ¥ÀÌÅÍÀÇ °¢ º¯¼öµé°úÀÇ °ü°è¸¦ ±×·¡ÇÁ·Î º»µÚ, °ü°è¼ºÀÌ ³ôÀº º¯¼öµé³¢¸® ºñ±³¸¦ ÇØºÃ½À´Ï´Ù. 
+#(1) cars ë°ì´í„°ì˜ ê° ë³€ìˆ˜ë“¤ê³¼ì˜ ê´€ê³„ë¥¼ ê·¸ë˜í”„ë¡œ ë³¸ë’¤, ê´€ê³„ì„±ì´ ë†’ì€ ë³€ìˆ˜ë“¤ë¼ë¦¬ ë¹„êµë¥¼ í•´ë´¤ìŠµë‹ˆë‹¤.
 cars
 str(cars)
-plot(cars,xlim=c(0,130),ylim=c(0,130))
-cor.test(cars$speed, cars$dist,method = "pearson")
+plot(cars, xlim = c(0, 130), ylim = c(0, 130))
+cor.test(cars$speed, cars$dist, method = "pearson")
 
 install.packages("corrgram")
 library(corrgram)
 
-#(2) mtcars µ¥ÀÌÅÍÀÇ °¢º¯¼öµé°úÀÇ °ü°è¸¦ ±×·¡ÇÁ·Î º»µÚ, °ü°è¼ºÀÌ ³ôÀº º¯¼öµé³¢¸® ºñ±³¸¦ ÇØºÃ½À´Ï´Ù.
+#(2) mtcars ë°ì´í„°ì˜ ê°ë³€ìˆ˜ë“¤ê³¼ì˜ ê´€ê³„ë¥¼ ê·¸ë˜í”„ë¡œ ë³¸ë’¤, ê´€ê³„ì„±ì´ ë†’ì€ ë³€ìˆ˜ë“¤ë¼ë¦¬ ë¹„êµë¥¼ í•´ë´¤ìŠµë‹ˆë‹¤.
 mtcars
 str(mtcars)
 library(corrplot)
 corrplot(cor(mtcars), method = "ellipse")
-cor.test(mtcars$mpg,mtcars$cyl, method = "pearson")
-cor.test(mtcars$disp,mtcars$cyl, method = "pearson")           
+cor.test(mtcars$mpg, mtcars$cyl, method = "pearson")
+cor.test(mtcars$disp, mtcars$cyl, method = "pearson")
 
 
 
-#(3) Á¦°¡ ¾Ë°í½ÍÀº°ÍÀº survived¿Í Å¸ º¯¼ö¿ÍÀÇ °ü°è¿´±â¿¡, ´ç¿¬ÇÏ°Ôµµ survived °ªÀÌ ¾ø´Â test µ¥ÀÌÅÍ´Â »ç¿ëÇÏÁö ¾Ê°í training µ¥ÀÌÅÍ¸¸ »ç¿ëÇÏ¿´½À´Ï´Ù.
+#(3) ì œê°€ ì•Œê³ ì‹¶ì€ê²ƒì€ survivedì™€ íƒ€ ë³€ìˆ˜ì™€ì˜ ê´€ê³„ì˜€ê¸°ì—, ë‹¹ì—°í•˜ê²Œë„ survived ê°’ì´ ì—†ëŠ” test ë°ì´í„°ëŠ” ì‚¬ìš©í•˜ì§€ ì•Šê³  training ë°ì´í„°ë§Œ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.
 test <- read.csv("test.csv")
 training <- read.csv("train.csv")
 gender <- read.csv("gender_submission.csv")
 
 View(test)
 View(training)
-View(gender)            
+View(gender)
 
-table(training$Survived,training$Pclass)
-addmargins(table(training$Survived,training$Pclass))
-prop.table(table(training$Survived,training$Pclass))
-barplot(prop.table(table(training$Survived,training$Pclass)), xlab="class", beside = T, col =c("red","blue"), legend = c("die","live"))
-chisq.test(table(training$Survived,training$Pclass))
-table(training$Survived,training$Sex)
-prop.table(table(training$Survived,training$Sex))
-barplot(prop.table(table(training$Survived,training$Sex)), beside = TRUE, col = c("red","green"), legend = c("die","live"))
-chisq.test(table(training$Survived,training$Sex))
+table(training$Survived, training$Pclass)
+addmargins(table(training$Survived, training$Pclass))
+prop.table(table(training$Survived, training$Pclass))
+barplot(
+  prop.table(table(training$Survived, training$Pclass)),
+  xlab = "class",
+  beside = T,
+  col = c("red", "blue"),
+  legend = c("die", "live")
+)
+chisq.test(table(training$Survived, training$Pclass))
+table(training$Survived, training$Sex)
+prop.table(table(training$Survived, training$Sex))
+barplot(
+  prop.table(table(training$Survived, training$Sex)),
+  beside = TRUE,
+  col = c("red", "green"),
+  legend = c("die", "live")
+)
+chisq.test(table(training$Survived, training$Sex))
 
 
 
@@ -44,17 +55,20 @@ chisq.test(table(training$Survived,training$Sex))
 iris
 str(iris)
 plot(iris)
-cor.test(iris$Petal.Width,iris$Sepal.Length, method = "pearson")
+cor.test(iris$Petal.Width, iris$Sepal.Length, method = "pearson")
 
 
 
 #(4-1)
 str(states)
 states <- data.frame(state.region, state.x77)
-plot(states$Frost, states$Area, xlim = c(0,60000), ylim = c(0,60000))
+plot(states$Frost,
+     states$Area,
+     xlim = c(0, 60000),
+     ylim = c(0, 60000))
 cor.test(states$Frost, states$Area, method = "pearson")
 
-# ÀÌ°Ç ¸øÇß½À´Ï´Ù.....
+# ì´ê±´ ëª»í–ˆìŠµë‹ˆë‹¤.....
 
 
 
@@ -64,8 +78,8 @@ midwest
 midwest <- as.data.frame(midwest)
 str(midwest)
 View(midwest)
-corrplot(cor(midwest[,c(4:11,17)]))
-cor.test(midwest$popblack,midwest$popwhite, method = "pearson")
+corrplot(cor(midwest[, c(4:11, 17)]))
+cor.test(midwest$popblack, midwest$popwhite, method = "pearson")
 
 
 
@@ -73,8 +87,14 @@ cor.test(midwest$popblack,midwest$popwhite, method = "pearson")
 #(6)
 library(vcd)
 View(Arthritis)
-k <- table(Arthritis$Treatment,Arthritis$Improved)
+k <- table(Arthritis$Treatment, Arthritis$Improved)
 addmargins(k)
 prop.table(k)
-barplot(t(prop.table(k)),beside=T, ylab = "prop" , legend=c("none","some","marked"), col = c("green","blue","red"))
-chisq.test(table(Arthritis$Treatment,Arthritis$Improved))
+barplot(
+  t(prop.table(k)),
+  beside = T,
+  ylab = "prop" ,
+  legend = c("none", "some", "marked"),
+  col = c("green", "blue", "red")
+)
+chisq.test(table(Arthritis$Treatment, ved))
