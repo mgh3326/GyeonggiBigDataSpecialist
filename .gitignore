@@ -1,5 +1,13 @@
 
-# Created by https://www.gitignore.io/api/r,python,pycharm,visualstudio,visualstudiocode
+# Created by https://www.gitignore.io/api/r,python,pycharm,visualstudio,jupyternotebook,visualstudiocode
+
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+#
 
 ### PyCharm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -24,6 +32,14 @@
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
 
 # CMake
 cmake-build-*/
@@ -139,7 +155,6 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
 
 # pyenv
 .python-version
@@ -171,6 +186,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+### Python Patch ###
+.venv/
 
 ### R ###
 # History files
@@ -550,10 +568,5 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 
-### VisualStudio Patch ###
-# By default, sensitive information, such as encrypted password
-# should be stored in the .pubxml.user file.
-*.pubxml.user
 
-
-# End of https://www.gitignore.io/api/r,python,pycharm,visualstudio,visualstudiocode
+# End of https://www.gitignore.io/api/r,python,pycharm,visualstudio,jupyternotebook,visualstudiocode
