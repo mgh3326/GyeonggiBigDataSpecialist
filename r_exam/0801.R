@@ -73,6 +73,31 @@ model <-
     epoch.end.callback = mx.callback.log.train.metric(100)
   )
 
-preds = predict(model, test.x)
-pred.label = max.col(t(preds)) - 1
-table(pred.label, test.y)
+
+train <-
+  read.csv(
+    'https://raw.githubusercontent.com/ozt-ca/tjo.hatenablog.samples/master/r_samples/public_lib/jp/mnist_reproduced/short_prac_train.csv'
+  )
+test <-
+  read.csv(
+    'https://raw.githubusercontent.com/ozt-ca/tjo.hatenablog.samples/master/r_samples/public_lib/jp/mnist_reproduced/short_prac_test.csv'
+  )
+
+train <- data.matrix(train)
+test <- data.matrix(test)
+train.x <- train[,-1]
+train.y <- train[, 1]
+train.x <- t(train.x / 255) #표준화
+test_org <- test #원본파일 저장
+test <- test[,-1]
+test <- t(test / 255)
+table(train.y)
+
+preds <- predict(model, test)
+dim(preds)
+
+pred.label <- max.col(t(preds)) - 1
+table(pred.label)
+head(pred.label)
+t1 <- table(test_org[, 1], pred.label)
+sum(diag(t1)) / sum(t1)
