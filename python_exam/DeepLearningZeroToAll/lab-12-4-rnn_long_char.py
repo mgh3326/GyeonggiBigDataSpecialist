@@ -47,6 +47,7 @@ def lstm_cell():
     cell = rnn.BasicLSTMCell(hidden_size, state_is_tuple=True)
     return cell
 
+
 multi_cells = rnn.MultiRNNCell([lstm_cell() for _ in range(2)], state_is_tuple=True)
 
 # outputs: unfolding size x hidden size, state = hidden size
