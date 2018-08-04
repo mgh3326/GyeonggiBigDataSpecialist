@@ -1,0 +1,186 @@
+
+6*title*ML lec 03 - Linear Regression의 cost 최소화 알고리즘의 원리 설명
+6*played*0
+6*duration2*971174
+6*thumbnail*https://i.ytimg.com/vi/TxIVr-nk1so/default.jpg
+6*start*55963
+
+듣고 있다리
+
+
+7*file*http://www.youtube.com/watch?v=Y0EF9VqRuEA
+7*title*ML lab 03 - Linear Regression 의 cost 최소화의 TensorFlow 구현 (new)
+7*played*0
+7*thumbnail*https://i.ytimg.com/vi/Y0EF9VqRuEA/mqdefault.jpg
+8*file*http://www.youtube.com/watch?v=kPxpJY6fRkY
+8*title*ML lec 04 - multi-variable linear regression (*new)
+8*played*0
+8*thumbnail*https://i.ytimg.com/vi/kPxpJY6fRkY/mqdefault.jpg
+9*file*http://www.youtube.com/watch?v=fZUV3xjoZSM
+9*title*ML lab 04-1: multi-variable linear regression을 TensorFlow에서 구현하기 (new)
+9*played*0
+9*thumbnail*https://i.ytimg.com/vi/fZUV3xjoZSM/mqdefault.jpg
+10*file*http://www.youtube.com/watch?v=o2q4QNnoShY
+10*title*ML lab 04-2: TensorFlow로 파일에서 데이타 읽어오기 (new)
+10*played*0
+10*thumbnail*https://i.ytimg.com/vi/o2q4QNnoShY/mqdefault.jpg
+11*file*http://www.youtube.com/watch?v=PIjno6paszY
+11*title*ML lec 5-1: Logistic Classification의 가설 함수 정의
+11*played*0
+11*thumbnail*https://i.ytimg.com/vi/PIjno6paszY/mqdefault.jpg
+12*file*http://www.youtube.com/watch?v=6vzchGYEJBc
+12*title*ML lec 5-2 Logistic Regression의 cost 함수 설명
+12*played*0
+12*thumbnail*https://i.ytimg.com/vi/6vzchGYEJBc/mqdefault.jpg
+13*file*http://www.youtube.com/watch?v=2FeWGgnyLSw
+13*title*ML lab 05: TensorFlow로 Logistic Classification의 구현하기 (new)
+13*played*0
+13*thumbnail*https://i.ytimg.com/vi/2FeWGgnyLSw/mqdefault.jpg
+14*file*http://www.youtube.com/watch?v=MFAnsx1y9ZI
+14*title*ML lec 6-1 - Softmax Regression: 기본 개념 소개
+14*played*0
+14*thumbnail*https://i.ytimg.com/vi/MFAnsx1y9ZI/mqdefault.jpg
+15*file*http://www.youtube.com/watch?v=jMU9G5WEtBc
+15*title*ML lec 6-2: Softmax classifier 의 cost함수
+15*played*0
+15*thumbnail*https://i.ytimg.com/vi/jMU9G5WEtBc/mqdefault.jpg
+16*file*http://www.youtube.com/watch?v=VRnubDzIy3A
+16*title*ML lab 06-1: TensorFlow로 Softmax Classification의 구현하기
+16*played*0
+16*thumbnail*https://i.ytimg.com/vi/VRnubDzIy3A/mqdefault.jpg
+17*file*http://www.youtube.com/watch?v=E-io76NlsqA
+17*title*ML lab 06-2: TensorFlow로 Fancy Softmax Classification의 구현하기
+17*played*0
+17*thumbnail*https://i.ytimg.com/vi/E-io76NlsqA/mqdefault.jpg
+18*file*http://www.youtube.com/watch?v=1jPjVoDV_uo
+18*title*lec 07-1: 학습 rate, Overfitting, 그리고 일반화 (Regularization)
+18*played*0
+18*thumbnail*https://i.ytimg.com/vi/1jPjVoDV_uo/mqdefault.jpg
+19*file*http://www.youtube.com/watch?v=KVv1nMSlPzY
+19*title*lec 07-2: Training/Testing 데이타 셋
+19*played*0
+19*thumbnail*https://i.ytimg.com/vi/KVv1nMSlPzY/mqdefault.jpg
+20*file*http://www.youtube.com/watch?v=oSJfejG2C3w
+20*title*ML lab 07-1: training/test dataset, learning rate, normalization
+20*played*0
+20*thumbnail*https://i.ytimg.com/vi/oSJfejG2C3w/mqdefault.jpg
+21*file*http://www.youtube.com/watch?v=ktd5yrki_KA
+21*title*ML lab 07-2: Meet MNIST Dataset
+21*played*0
+21*thumbnail*https://i.ytimg.com/vi/ktd5yrki_KA/mqdefault.jpg
+22*file*http://www.youtube.com/watch?v=n7DNueHGkqE
+22*title*lec 08-1: 딥러닝의 기본 개념: 시작과 XOR 문제
+22*played*0
+22*thumbnail*https://i.ytimg.com/vi/n7DNueHGkqE/mqdefault.jpg
+23*file*http://www.youtube.com/watch?v=AByVbUX1PUI
+23*title*lec 08-2: 딥러닝의 기본 개념2: Back-propagation 과 2006/2007 '딥'의 출현
+23*played*0
+23*thumbnail*https://i.ytimg.com/vi/AByVbUX1PUI/mqdefault.jpg
+24*file*http://www.youtube.com/watch?v=ZYX0FaqUeN4
+24*title*ML lab 08: Tensor Manipulation
+24*played*0
+24*thumbnail*https://i.ytimg.com/vi/ZYX0FaqUeN4/mqdefault.jpg
+25*file*http://www.youtube.com/watch?v=GYecDQQwTdI
+25*title*lec9-1: XOR 문제 딥러닝으로 풀기
+25*played*0
+25*thumbnail*https://i.ytimg.com/vi/GYecDQQwTdI/mqdefault.jpg
+26*file*http://www.youtube.com/watch?v=oZyvmtqLmLo
+26*title*lec9-x: 특별편: 10분안에 미분 정리하기 (lec9-2 이전에 보세요)
+26*played*0
+26*thumbnail*https://i.ytimg.com/vi/oZyvmtqLmLo/mqdefault.jpg
+27*file*http://www.youtube.com/watch?v=573EZkzfnZ0
+27*title*lec9-2:  딥넷트웍 학습 시키기 (backpropagation)
+27*played*0
+27*thumbnail*https://i.ytimg.com/vi/573EZkzfnZ0/mqdefault.jpg
+28*file*http://www.youtube.com/watch?v=oFGHOsAYiz0
+28*title*ML lab 09-1: Neural Net for XOR
+28*played*0
+28*thumbnail*https://i.ytimg.com/vi/oFGHOsAYiz0/mqdefault.jpg
+29*file*http://www.youtube.com/watch?v=lmrWZPFYjHM
+29*title*ML lab 09-2: Tensorboard (Neural Net for XOR)
+29*played*0
+29*thumbnail*https://i.ytimg.com/vi/lmrWZPFYjHM/mqdefault.jpg
+30*file*http://www.youtube.com/watch?v=cKtg_fpw88c
+30*title*lec10-1: Sigmoid 보다 ReLU가 더 좋아
+30*played*0
+30*thumbnail*https://i.ytimg.com/vi/cKtg_fpw88c/mqdefault.jpg
+31*file*http://www.youtube.com/watch?v=4rC0sWrp3Uw
+31*title*lec10-2: Weight 초기화 잘해보자
+31*played*0
+31*thumbnail*https://i.ytimg.com/vi/4rC0sWrp3Uw/mqdefault.jpg
+32*file*http://www.youtube.com/watch?v=wTxMsp22llc
+32*title*lec10-3: Dropout 과 앙상블
+32*played*0
+32*thumbnail*https://i.ytimg.com/vi/wTxMsp22llc/mqdefault.jpg
+33*file*http://www.youtube.com/watch?v=YHsbHjTBx9Q
+33*title*lec10-4: 레고처럼 넷트웍 모듈을 마음껏 쌓아 보자
+33*played*0
+33*thumbnail*https://i.ytimg.com/vi/YHsbHjTBx9Q/mqdefault.jpg
+34*file*http://www.youtube.com/watch?v=6CCXyfvubvY
+34*title*ML lab10: NN, ReLu, Xavier, Dropout, and Adam
+34*played*0
+34*thumbnail*https://i.ytimg.com/vi/6CCXyfvubvY/mqdefault.jpg
+35*file*http://www.youtube.com/watch?v=Em63mknbtWo
+35*title*lec11-1 ConvNet의 Conv 레이어 만들기
+35*played*0
+35*thumbnail*https://i.ytimg.com/vi/Em63mknbtWo/mqdefault.jpg
+36*file*http://www.youtube.com/watch?v=2-75C-yZaoA
+36*title*lec11-2: ConvNet Max pooling 과 Full Network
+36*played*0
+36*thumbnail*https://i.ytimg.com/vi/2-75C-yZaoA/mqdefault.jpg
+37*file*http://www.youtube.com/watch?v=KbNbWTnlYXs
+37*title*lec11-3 ConvNet의 활용예
+37*played*0
+37*thumbnail*https://i.ytimg.com/vi/KbNbWTnlYXs/mqdefault.jpg
+38*file*http://www.youtube.com/watch?v=E9Xh_fc9KnQ
+38*title*ML lab11-1: TensorFlow CNN Basics
+38*played*0
+38*thumbnail*https://i.ytimg.com/vi/E9Xh_fc9KnQ/mqdefault.jpg
+39*file*http://www.youtube.com/watch?v=pQ9Y9ZagZBk
+39*title*ML lab11-2: MNIST 99% with CNN
+39*played*0
+39*thumbnail*https://i.ytimg.com/vi/pQ9Y9ZagZBk/mqdefault.jpg
+40*file*http://www.youtube.com/watch?v=c62uTWdhhMw
+40*title*ML lab11-3: CNN Class, Layers, Ensemble
+40*played*0
+40*thumbnail*https://i.ytimg.com/vi/c62uTWdhhMw/mqdefault.jpg
+41*file*http://www.youtube.com/watch?v=-SHPG_KMUkQ
+41*title*lec12: NN의 꽃 RNN 이야기
+41*played*0
+41*thumbnail*https://i.ytimg.com/vi/-SHPG_KMUkQ/mqdefault.jpg
+42*file*http://www.youtube.com/watch?v=B5GtZuUvujQ
+42*title*ML lab12-1: RNN - Basics
+42*played*0
+42*thumbnail*https://i.ytimg.com/vi/B5GtZuUvujQ/mqdefault.jpg
+43*file*http://www.youtube.com/watch?v=39_P23TqUnw
+43*title*ML lab12-2: RNN - Hi Hello Training
+43*played*0
+43*thumbnail*https://i.ytimg.com/vi/39_P23TqUnw/mqdefault.jpg
+44*file*http://www.youtube.com/watch?v=2R6nfCNNz1U
+44*title*ML lab12-3: Long Sequence RNN
+44*played*0
+44*thumbnail*https://i.ytimg.com/vi/2R6nfCNNz1U/mqdefault.jpg
+45*file*http://www.youtube.com/watch?v=vwjt1ZE5-K4
+45*title*ML lab12-4: Stacked RNN + Softmax Layer
+45*played*0
+45*thumbnail*https://i.ytimg.com/vi/vwjt1ZE5-K4/mqdefault.jpg
+46*file*http://www.youtube.com/watch?v=aArdoSpdMEc
+46*title*ML lab12-5: Dynamic RNN
+46*played*0
+46*thumbnail*https://i.ytimg.com/vi/aArdoSpdMEc/mqdefault.jpg
+47*file*http://www.youtube.com/watch?v=odMGK7pwTqY
+47*title*ML lab12-6: RNN with Time Series Data
+47*played*0
+47*thumbnail*https://i.ytimg.com/vi/odMGK7pwTqY/mqdefault.jpg
+48*file*http://www.youtube.com/watch?v=9VckXVoJEe0
+48*title*lab13: TensorFlow를 AWS에서 GPU와 함께 돌려보자
+48*played*0
+48*thumbnail*https://i.ytimg.com/vi/9VckXVoJEe0/mqdefault.jpg
+49*file*http://www.youtube.com/watch?v=orIXr5xd6P0
+49*title*lab14: AWS에서 저렴하게 Spot Instance를 터미네이션 걱정없이 사용하기
+49*played*0
+49*thumbnail*https://i.ytimg.com/vi/orIXr5xd6P0/mqdefault.jpg
+50*file*http://www.youtube.com/watch?v=8Jkz2HexDAM
+50*title*Google Cloud ML with Examples 1  (KOREAN)
+50*played*0
+50*thumbnail*https://i.ytimg.com/vi/8Jkz2HexDAM/mqdefault.jpg

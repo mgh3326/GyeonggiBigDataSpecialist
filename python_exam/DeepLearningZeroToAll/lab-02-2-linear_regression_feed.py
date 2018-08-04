@@ -1,5 +1,6 @@
 # Lab 2 Linear Regression
 import tensorflow as tf
+
 tf.set_random_seed(777)  # for reproducibility
 
 # Try to find values for W and b to compute y_data = W * x_data + b
@@ -54,7 +55,6 @@ print(sess.run(hypothesis, feed_dict={X: [1.5, 3.5]}))
 [ 2.50091505]
 [ 1.49687922  3.50495124]
 '''
-
 
 # Fit the line with new training data
 for step in range(2001):
