@@ -1,6 +1,7 @@
 # Lab 3 Minimizing Cost
 import tensorflow as tf
 import matplotlib.pyplot as plt
+
 tf.set_random_seed(777)  # for reproducibility
 
 X = [1, 2, 3]

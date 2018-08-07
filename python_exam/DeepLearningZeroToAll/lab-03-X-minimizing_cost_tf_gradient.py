@@ -1,6 +1,7 @@
 # Lab 3 Minimizing Cost
 # This is optional
 import tensorflow as tf
+
 tf.set_random_seed(777)  # for reproducibility
 
 # tf Graph Input
@@ -39,7 +40,6 @@ for step in range(100):
     print(step, sess.run([gradient, W, gvs]))
     sess.run(apply_gradients)
     # Same as sess.run(train)
-
 
 '''
 # Apply gradients

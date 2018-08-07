@@ -2,6 +2,7 @@
 # https://www.tensorflow.org/programmers_guide/reading_data
 
 import tensorflow as tf
+
 tf.set_random_seed(777)  # for reproducibility
 
 filename_queue = tf.train.string_input_producer(

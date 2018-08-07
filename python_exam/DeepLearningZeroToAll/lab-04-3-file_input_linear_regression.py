@@ -1,6 +1,7 @@
 # Lab 4 Multi-variable linear regression
 import tensorflow as tf
 import numpy as np
+
 tf.set_random_seed(777)  # for reproducibility
 
 xy = np.loadtxt('data-01-test-score.csv', delimiter=',', dtype=np.float32)

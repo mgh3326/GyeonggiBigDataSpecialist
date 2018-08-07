@@ -1,5 +1,6 @@
 # Lab 4 Multi-variable linear regression
 import tensorflow as tf
+
 tf.set_random_seed(777)  # for reproducibility
 
 x_data = [[73., 80., 75.],
@@ -12,7 +13,6 @@ y_data = [[152.],
           [180.],
           [196.],
           [142.]]
-
 
 # placeholders for a tensor that will be always fed.
 X = tf.placeholder(tf.float32, shape=[None, 3])

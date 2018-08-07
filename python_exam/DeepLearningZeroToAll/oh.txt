@@ -1,29 +1,4 @@
-
-6*title*ML lec 03 - Linear Regression의 cost 최소화 알고리즘의 원리 설명
-6*played*0
-6*duration2*971174
-6*thumbnail*https://i.ytimg.com/vi/TxIVr-nk1so/default.jpg
-6*start*55963
-
 듣고 있다리
-
-
-7*file*http://www.youtube.com/watch?v=Y0EF9VqRuEA
-7*title*ML lab 03 - Linear Regression 의 cost 최소화의 TensorFlow 구현 (new)
-7*played*0
-7*thumbnail*https://i.ytimg.com/vi/Y0EF9VqRuEA/mqdefault.jpg
-8*file*http://www.youtube.com/watch?v=kPxpJY6fRkY
-8*title*ML lec 04 - multi-variable linear regression (*new)
-8*played*0
-8*thumbnail*https://i.ytimg.com/vi/kPxpJY6fRkY/mqdefault.jpg
-9*file*http://www.youtube.com/watch?v=fZUV3xjoZSM
-9*title*ML lab 04-1: multi-variable linear regression을 TensorFlow에서 구현하기 (new)
-9*played*0
-9*thumbnail*https://i.ytimg.com/vi/fZUV3xjoZSM/mqdefault.jpg
-10*file*http://www.youtube.com/watch?v=o2q4QNnoShY
-10*title*ML lab 04-2: TensorFlow로 파일에서 데이타 읽어오기 (new)
-10*played*0
-10*thumbnail*https://i.ytimg.com/vi/o2q4QNnoShY/mqdefault.jpg
 11*file*http://www.youtube.com/watch?v=PIjno6paszY
 11*title*ML lec 5-1: Logistic Classification의 가설 함수 정의
 11*played*0

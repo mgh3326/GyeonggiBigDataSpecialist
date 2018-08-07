@@ -1,5 +1,6 @@
 # Lab 4 Multi-variable linear regression
 import tensorflow as tf
+
 tf.set_random_seed(777)  # for reproducibility
 
 x1_data = [73., 93., 89., 96., 73.]
